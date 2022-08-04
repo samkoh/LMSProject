@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+
+    <form action="/submit/<%=postId%>" method="post">
+
+        <div class="form-group">
+            <label for="">MODULE NAME</label>
+            <input type="text" class="form-control" name="titleInput" value="<%= postTitle %>">
+        </div>
+        <div class="form-group">
+            <label for="">OBJECTIVES</label>
+            <textarea class="form-control" name="objectivesInput" id="" rows="8"
+                autocomplete="off"><%= postObjectives %></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">DESCRIPTION</label>
+            <textarea class="form-control" name="descriptionInput" id="" rows="8"
+                autocomplete="off"><%= postDescription %></textarea>
+        </div>
+
+        <input type="hidden" name="idInput" value="<%= postId %>"></input>
+        <button type="submit" class="btn btn-primary" name="button">Submit</button>
+    </form>
+
+    
+    <%- include("partials/footer"); -%>

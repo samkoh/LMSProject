@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+    <h1>New Module Insert Page</h1>
+
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <label for="">MODULE NAME</label>
+            <input type="text" class="form-control" name="titleInput">
+        </div>
+        <div class="form-group">
+            <label for="">OBJECTIVES</label>
+            <textarea class="form-control" name="ObjectivesInput" id="" rows="8" autocomplete="off"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">DESCRIPTION</label>
+            <textarea class="form-control" name="DescriptionInput" id="" rows="8" autocomplete="off"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" name="button">Submit</button>
+    </form>
+
+
+
+    <%- include("partials/footer"); -%>
